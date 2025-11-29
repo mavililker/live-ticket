@@ -1,0 +1,7 @@
+// Geleneksel artan fiyat = SCALPER cenneti
+ZAMANLA ARTAN FİYAT:
+- Scalper'lar erken alır, pahalı satar
+- Gerçek hayranlar daha fazla öder
+- Adaletsiz ve kullanıcı düşmanı
+
+“Bilet fiyatımız, zaman geçtikçe doğal olarak düşüyor, ama talep arttıkça tekrar yükseliyor. Böylece hem erken alan kazanıyor, hem de aşırı talep geldiğinde adil bir şekilde gelir artıyor. Tüm bu model şeffaf biçimde Soroban smart contract içinde formülle tanımlı.”
