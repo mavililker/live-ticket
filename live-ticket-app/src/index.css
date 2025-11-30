@@ -1,2 +1,21 @@
 /* Import font for Stellar Design System */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Inconsolata:wght@500&display=swap");
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #f5f3ff 0%,
+    #ede9fe 25%,
+    #ddd6fe 50%,
+    #fce7f3 75%,
+    #fbcfe8 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

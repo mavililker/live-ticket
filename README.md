@@ -1,22 +1,45 @@
-# Soroban Project
+LiveTicket – Dynamic Price Ticketing on Stellar
 
+A real-time, blockchain-based ticketing protocol powered by Stellar Soroban smart contracts, featuring dynamic pricing, anti-scalping design, and instant ownership verification via on-chain storage.
+
+The system consists of:
+
+1.	TicketManager Contract – manages events, ownership, counts
+2.	Frontend (React) – users can create events and buy tickets
+3.	Wallet integration (Freighter)
+4.	Testnet or local Soroban backend
+
+Core Ticket Features
+	•	Create events with: init(event_name,base_price,sale_end,ticket_count)
+	•	Buy ticket (auto-increment ticket ID)
+	•	Remaining ticket counter updated on-chain
+	•	Ownership stored in contract instance storage
+	•	Prevents buying if:
+	•	no tickets left
+	•	sale period ended
+
+    All read directly from instance storage:
+	•	get_ticket_left()
+	•	get_last_current_price()
+	•	get_ticket_owner(ticket_id)
+
+ 
 ## Project Structure
 
-This repository uses the recommended structure for a Soroban project:
-
-```text
-.
-├── contracts
-│   └── hello_world
+live-ticket
+├── live-ticket-app                 # React Frontend (Stellar Wallet Kit + Contract Client)
+│   ├── src
+│   │   ├── components
+│   │   ├── contracts
+│   │   ├── hooks
+│   │   └── pages
+│   ├── public
+│   └── package.json
+├── contracts                       # Smart Contracts
+│   └── ticket-manager
 │       ├── src
 │       │   ├── lib.rs
 │       │   └── test.rs
 │       └── Cargo.toml
 ├── Cargo.toml
 └── README.md
-```
-
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.

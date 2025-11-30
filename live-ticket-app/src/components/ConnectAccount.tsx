@@ -16,8 +16,6 @@ const ConnectAccount: React.FC = () => {
       }}
     >
       <WalletButton />
-      {stellarNetwork !== "PUBLIC" && <FundAccountButton />}
-      <NetworkPill />
     </div>
   );
 };
