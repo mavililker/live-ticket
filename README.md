@@ -9,6 +9,7 @@ The system consists of:
 3.	Wallet integration (Freighter)
 4.	Testnet or local Soroban backend
 
+```text
 Core Ticket Features
 	•	Create events with: init(event_name,base_price,sale_end,ticket_count)
 	•	Buy ticket (auto-increment ticket ID)
@@ -22,7 +23,7 @@ Core Ticket Features
 	•	get_ticket_left()
 	•	get_last_current_price()
 	•	get_ticket_owner(ticket_id)
-
+```
  
 ## Project Structure
 
