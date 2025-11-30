@@ -26,20 +26,22 @@ Core Ticket Features
  
 ## Project Structure
 
+```text
 live-ticket
-├── live-ticket-app                 # React Frontend (Stellar Wallet Kit + Contract Client)
-│   ├── src
-│   │   ├── components
-│   │   ├── contracts
-│   │   ├── hooks
-│   │   └── pages
-│   ├── public
-│   └── package.json
-├── contracts                       # Smart Contracts
-│   └── ticket-manager
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
+├── live-ticket-app             # React frontend (Stellar Wallet Kit + contract client)
+│   ├── src
+│   │   ├── components
+│   │   ├── contracts
+│   │   ├── hooks
+│   │   └── pages
+│   ├── public
+│   └── package.json
+├── contracts                   # Soroban smart contracts
+│   └── ticket-manager
+│       ├── src
+│       │   ├── lib.rs
+│       │   └── test.rs
+│       └── Cargo.toml
+├── Cargo.toml                  # Workspace root
 └── README.md
+```
