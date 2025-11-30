@@ -88,8 +88,8 @@ impl TicketManager {
             panic!("no tickets left");
         }
 
-        let price = read_last_current_price(&env); // Şimdilik base_price kullanılıyor
-        // 6) Ödeme işlemini burada yap (bu örnekte atlanıyor)
+        let price = read_last_current_price(&env);
+        
         log!(&env, "Payment required: {} XLM for ticket", price);
 
         let last_ticket_id: u32 = read_last_ticket_id(&env);
